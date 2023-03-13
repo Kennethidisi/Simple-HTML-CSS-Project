@@ -1,0 +1,749 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(lamp\ img.jpg);;
+    background-size: 100%;
+    background-position: center;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo h3{
+    color: white;
+    font-weight: 400;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-span{
+    width: 85%;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-right: none;
+    
+}
+
+.search-span img{
+    position: absolute;
+    left: 20px;
+    top: 12px;
+}
+
+.search-span input{
+    width: 93%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-left: 50px;
+    padding-right: 30px;
+    color: white;
+    
+}
+
+.go-span{
+    width: 7%;
+    height: 41px;
+    background-color: darkorange;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.go-span:hover{
+    background-color: green;
+}
+
+.go-span h1{
+    color: white;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.nav{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+}
+
+.nav a:hover{
+    color: darkorange;
+}
+
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 80px;
+}
+
+#trending{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+#trending h1{
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.row1-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.row1-img img{
+    width: 350px;
+    height: 250px;
+}
+
+.row2-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.big-img{
+    width: 750px;
+    height: 550;
+}
+
+.small-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.small-img img{
+    width: 350px;
+    height: 225px;
+}
+
+
+#account{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 60px;
+    padding-top: 80px;
+}
+
+#account h1{
+    font-size: 45px;
+    font-weight: 100;
+}
+
+#account form{
+    width: 60%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px;
+    gap: 40px;
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.input-group input{
+    width: 46%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid silver;
+    background-color: transparent;
+}
+
+.address{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid silver;
+    background-color: transparent;
+}
+
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn input{
+    padding: 10px;
+    background-color: darkorange;
+    color: white;
+    width: 150px;
+    outline: none;
+    border: 1px solid darkorange;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+.btn input:hover{
+    background-color: #666;
+    border: 1px solid #666;
+}
+
+
+#gallery{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    padding-top: 30px;
+}
+
+#gallery h1{
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.gallery-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.gallery-img img{
+    width: 350px;
+    height: 250px;
+}
+
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(map.png);
+    background-size: 100%;
+    padding-top: 50px;
+
+}
+
+#contact h1{
+    font-size: 55px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+form{
+    width: 15%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    gap: 15px;
+}
+
+form h3{
+    color: darkorange;
+}
+
+form p{
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.icons{
+    width: 24%;
+    height: 45px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    border-radius: 45px;
+}
+
+
+footer{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-size: 12px;
+}
+
+
+
+
+
+/* mobile styling */
+@media(max-width:450px){
+
+    header{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(lamp\ img.jpg);
+        background-size: 100%;
+        background-position: center;
+    }
+    
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .logo h3{
+        font-size: 13px;
+        color: white;
+        font-weight: 400;
+    }
+    
+    .search{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .search-span{
+        width: 60%;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        border-right: none;
+    }
+    
+    .search-span img{
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .search-span input{
+        width: 85%;
+        height: 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        padding-left: 40px;
+        padding-right: 20px;
+        color: white;
+        
+    }
+    
+    .go-span{
+        width: 18%;
+        height: 31px;
+        background-color: darkorange;
+        border-radius: 31px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .go-span:hover{
+        background-color: green;
+    }
+    
+    .go-span h1{
+        color: white;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    .nav{
+        width: 100%;
+        height: 40px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+    
+    .nav a{
+        text-decoration: none;
+        color: white;
+        font-size: 8px;
+        
+    }
+    
+    .nav a:hover{
+        color: darkorange;
+    }
+    
+    
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    #trending{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+        padding-top: 40px;
+    }
+    
+    #trending h1{
+        font-size: 25px;
+        font-weight: 100;
+    }
+    
+    .row1-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .row1-img img{
+        width: 100px;
+        height: 70px;
+    }
+    
+    .row2-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    .big-img{
+        width: 215px;
+        height: 155px;
+    }
+    
+    .small-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .small-img img{
+        width: 100px;
+        height: 70px;
+    }
+    
+    
+    #account{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+        
+    }
+    
+    #account h1{
+        font-size: 25px;
+        font-weight: 100;
+    }
+    
+    #account form{
+        width: 73%;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px;
+        gap: 30px;
+    }
+    
+    .input-group{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    .input-group input{
+        width: 43%;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid silver;
+        background-color: transparent;
+    }
+    
+    .address{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .address input{
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid silver;
+        background-color: transparent;
+    }
+    
+    .btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn input{
+        padding: 10px;
+        background-color: darkorange;
+        color: white;
+        width: 150px;
+        outline: none;
+        border: 1px solid darkorange;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.4s ease;
+    }
+    
+    .btn input:hover{
+        background-color: #666;
+        border: 1px solid #666;
+    }
+    
+    
+    #gallery{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+        
+    }
+    
+    #gallery h1{
+        font-size: 25px;
+        font-weight: 100;
+    }
+    
+    .gallery-img{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .gallery-img img{
+        width: 170px;
+        height: 140px;
+    }
+    
+    
+    #contact{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(map.png);
+        background-size: 100%;
+        padding: 20px 10px 20px 10px;
+    
+    }
+    
+    #contact h1{
+        font-size: 30px;
+        font-weight: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    form{
+        width: 35%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px;
+        border-radius: 10px;
+        gap: 10px;
+    }
+    
+    form h3{
+        color: darkorange;
+    }
+    
+    form p{
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+    
+    .icons{
+        width: 40%;
+        height: 30px;
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        border-radius: 30px;
+    }
+
+    .icons img{
+        width: 20px;
+    }
+    
+    
+    footer{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer p{
+        font-size: 12px;
+    }
+
+      
+
+}
+

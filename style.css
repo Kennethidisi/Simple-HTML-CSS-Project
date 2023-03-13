@@ -415,7 +415,7 @@ footer p{
     }
     
     .search-span{
-        width: 60%;
+        width: 70%;
         height: 30px;
         border: 1px solid white;
         border-radius: 30px;
@@ -497,6 +497,7 @@ footer p{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        gap: 30px;
     }
     
     #trending{
@@ -505,8 +506,8 @@ footer p{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        gap: 15px;
-        padding-top: 40px;
+        gap: 20px;
+        padding-top: 30px;
     }
     
     #trending h1{
@@ -519,11 +520,11 @@ footer p{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 8px;
+        gap: 7px;
     }
     
     .row1-img img{
-        width: 100px;
+        width: 95px;
         height: 70px;
     }
     
@@ -532,11 +533,11 @@ footer p{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 8px;
+        gap: 7px;
     }
     
     .big-img{
-        width: 215px;
+        width: 210px;
         height: 155px;
     }
     
@@ -545,11 +546,11 @@ footer p{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
     }
     
     .small-img img{
-        width: 100px;
+        width: 95px;
         height: 70px;
     }
     
@@ -562,6 +563,7 @@ footer p{
         justify-content: flex-start;
         align-items: center;
         gap: 40px;
+        padding-top: 40px;
         
     }
     
@@ -571,7 +573,7 @@ footer p{
     }
     
     #account form{
-        width: 73%;
+        width: 80%;
         background-color: whitesmoke;
         display: flex;
         flex-direction: column;
@@ -646,7 +648,7 @@ footer p{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        gap: 40px;
+        gap: 30px;
         
     }
     
@@ -661,12 +663,12 @@ footer p{
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
     }
     
     .gallery-img img{
-        width: 170px;
-        height: 140px;
+        width: 210px;
+        height: 170px;
     }
     
     
@@ -740,7 +742,8 @@ footer p{
     }
     
     footer p{
-        font-size: 12px;
+        font-size: 10px;
+        text-align: center;
     }
 
       
